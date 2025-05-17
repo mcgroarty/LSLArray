@@ -1,11 +1,10 @@
-//
 // Array.lsl - String Array Implementation for LSL
 // Implements multiple string arrays using LSL lists
 //
 // Copyright (c) 2025, Brian McGroarty
 // This code is licensed under the BSD 3-Clause License - see the LICENSE file for details
-// This code was created with the assistance of AI (GitHub Copilot) on May 16, 2025
-// (It doesn't make me add that, but this still feels like cheating if I don't.)
+// This code was created with the assistance of AI
+// It doesn't make me add that, but this still feels like cheating if I don't.
 //
 // IMPORTANT: Any changes to this implementation must be reflected in design.md
 // to ensure documentation remains in sync with the code.
@@ -431,7 +430,7 @@ default
 {
     state_entry()
     {
-        llOwnerSay("String Array System Initialized");
+        llOwnerSay("\n\n\n\n\n\n\n\n\nString Array System Initialized");
         
         // Example: Create and manipulate arrays
         setArraySize("names", 3);

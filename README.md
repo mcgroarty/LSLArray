@@ -1,4 +1,4 @@
-# ArrayArray.lsl
+# Array.lsl
 An implementation of arrays in Linden Scripting Language, the Second Life scripting language
 
 ## Overview
@@ -29,3 +29,6 @@ string item = popArrayElement("queue");  // Remove from front
 This project is licensed under the BSD 3-Clause License - see the [LICENSE](LICENSE) file for details.
 
 Copyright (c) 2025, Brian McGroarty
+
+This code was created with the assistance of AI (GitHub Copilot)
+It doesn't make me add that, but this still feels like cheating if I don't.
