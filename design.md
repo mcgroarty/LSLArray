@@ -1,3 +1,10 @@
+<!--
+Design documentation for the LSL Array implementation
+Copyright (c) 2025, Brian McGroarty
+This document is licensed under the BSD 3-Clause License - see the LICENSE file for details
+This documentation was created with the assistance of AI
+-->
+
 # LSL Array Library Design Document
 
 ## Overview
@@ -61,7 +68,9 @@ The LSL Array library implements an arbitrary number of arrays that store string
 
 ### Including the Library in Your Script
 
-Copy the functions and global variables from Array.lsl into your script:
+Simply remove the existing functions in the default state section. Or, for smaller code:
+
+Copy the functions you want and the global variables from Array.lsl into your script:
 - Global variables: `g_arrayInfo` and `g_arrayData`
 - Helper functions: `findArrayIndex` and `getArrayOffset`
 - Core functions: `setArraySize`, `getArraySize`, `writeArrayElement`, and `readArrayElement`
