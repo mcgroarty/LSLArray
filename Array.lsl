@@ -131,7 +131,13 @@ integer setArraySize(string arrayId, integer size)
         g_arrayInfo = llDeleteSubList(g_arrayInfo, infoIndex, infoIndex + 1);
         
         // Remove array data
-        g_arrayData = llDeleteSubList(g_arrayData, dataOffset, dataOffset + oldSize - 1);
+        // Only attempt to remove data if the array actually had data
+        // If oldSize is 0, dataOffset + oldSize - 1 < dataOffset, causing llDeleteSubList
+        // to behave as an exclusion range (deleting everything BUT the range)
+        if (oldSize > 0)
+        {
+            g_arrayData = llDeleteSubList(g_arrayData, dataOffset, dataOffset + oldSize - 1);
+        }
         return TRUE;
     }
     
